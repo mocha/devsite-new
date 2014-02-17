@@ -1,13 +1,44 @@
+
+@hugepurple: #824199;
+@hugepurple-light: #682980;
+@hugepurple-dark: #472c82;
+
+@hugered: #df2134;
+@hugered-light: #f37667;
+@hugered-dark: #ab1d37;
+
+@hugeyellow: #fdba22;
+@hugeyellow-light: #e3a107;
+@hugeyellow-dark: #ef9923;
+
+@hugegreen: #1f9b48;
+@hugegreen-light: #9cce67;
+@hugegreen-dark: #106745;
+
+@hugeblue: #0eafcd;
+@hugeblue-light: #0098b3;
+@hugeblue-dark: #1c4455;
+
+
 body {
     background: white;
     font-family: "Source Sans Pro";
     font-weight: 400;
 }
 
+a {
+    color: #0eafcd;
+}
 
 
 
 .header {
+
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+    opacity: .85;
 
     background: black;
     color: white;
@@ -20,9 +51,17 @@ body {
     
         .title {
             display: block;
+            line-height: 20px;
             color: white;
             float: left;
             text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            font-size: .9em;
+            padding-left: 23px;
+            background: url(../img/rs-logo.svg) no-repeat left center;
+            background-size: contain;
         }
 
         ul {
@@ -36,6 +75,7 @@ body {
                     color: #d9d9d9;
                     text-decoration: none;
                     font-size: .9em;
+                    line-height: 20px;
 
                     &:hover,
                     &.selected {
@@ -118,8 +158,9 @@ body {
 
                 width: 940px;
                 margin: auto;
-                padding: 70px 70px 120px 70px;
+                padding: 110px 70px 120px 70px;
                 text-align: center;
+                text-shadow: 2px 2px 0 rgba(0,0,0,.2);
 
                 .topline {
                     display: block;
@@ -159,13 +200,20 @@ body {
                     font-size: .9em;
                     font-weight: 700;
                     letter-spacing: 1px;
+                    opacity: .9;
+                    text-decoration: none;
+                    text-shadow: none;
+
+                    &:hover {
+                        opacity: 1;
+                    }
                 }
             }
 
             &.slide1 {
-                background-color: #0eafcd;
+                background-color: @hugeblue;
                 background-image: url(../img/slide1.svg);
-                .ctabtn { color: #0eafcd; }
+                .ctabtn { color: @hugeblue; }
             }
 
             &.slide2 {
@@ -229,11 +277,12 @@ body {
                 display: inline-block;
                 padding : 8px 0;
                 width : 75%;
-                background: #999;
                 font-weight: 600;
                 text-decoration: none;
                 color: white;
                 margin-top: 20px;
+                border-radius: 30px;
+                text-shadow: 1px 1px 0 rgba(0,0,0,.2);
             }
 
             &.shield1 {
@@ -248,15 +297,28 @@ body {
                     }
                 }
 
+                a {
+                    color: #666;
+                }
+
                 .cta { 
-                    background : #fdba22;
+                    background : @hugeyellow;
                     margin-top: 0;
+                    color: white;
+                    &:hover { background: @hugeyellow-light; }
                 }
             }
 
 
-            &.shield2 .cta { background : #0eafcd; }
-            &.shield3 .cta { background : #824199; }
+            &.shield2 { 
+                .cta { background : @hugeblue; 
+                    &:hover { background: @hugeblue-light; }
+                }  
+            }
+            
+            &.shield3 .cta { background : @hugepurple; 
+                &:hover { background: @hugepurple-light; }
+            }
 
         }
     }
@@ -307,10 +369,14 @@ body {
                 display: inline-block;
                 padding : 8px 0;
                 width : 66%;
-                background: #df2134;
+                background: @hugegreen;
                 font-weight: 600;
                 text-decoration: none;
                 color: white;
+                border-radius: 30px;
+                text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+
+                &:hover { background: @hugegreen-dark; }
             }
         }
     }
@@ -333,7 +399,7 @@ body {
         letter-spacing: -1px;
 
         a { 
-            color: #0eafcd; 
+            color: @hugeblue; 
             text-decoration: none;
 
             &:hover {
@@ -353,11 +419,14 @@ body {
             float: left;
             margin-left: 20px;
 
-            .title {
+            .title a {
                 font-size: 1.4em;
                 font-weight: 600;
                 display: block;
                 line-height: 1.1em;
+                color: @hugeblue-dark;
+                text-decoration: none;
+                &:hover { color : @hugeblue; }
             }
 
             .byline {
