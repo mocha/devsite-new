@@ -47,6 +47,9 @@
 .bodyitem.sdktable {
   margin-bottom: 80px;
 }
+.bodyitem.sdktable a {
+  color: #1f9b48;
+}
 .bodyitem.sdktable .lang {
   border-top: 1px solid #ccc;
   padding-top: 40px;
@@ -66,14 +69,14 @@
 }
 .bodyitem.sdktable .lang .col .cta {
   padding: 10px 20px;
-  background: #df2134;
+  background: #1f9b48;
   color: white;
   display: inline-block;
   border-radius: 100px;
   text-decoration: none;
 }
 .bodyitem.sdktable .lang .col .cta:hover {
-  background: #ab1d37;
+  background: #106745;
 }
 .bodyitem.sdktable .lang .col .colheader {
   font-weight: 700;

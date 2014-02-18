@@ -77,24 +77,26 @@
 }
 .hero-slider ul.slides li.hero-devtrial {
   background-color: #0eafcd;
-  background-image: url(../img/slide1.svg);
+  background-image: url(../img/slide4.svg);
 }
 .hero-slider ul.slides li.hero-devtrial .ctabtn {
   color: #0eafcd;
 }
 .hero-slider ul.slides li.hero-sdks {
-  background-color: #df2134;
+  background-color: #1f9b48;
   background-image: url(../img/slide2.svg);
 }
-.hero-slider ul.slides li.hero-sdks .ctabtn {
-  color: #df2134;
-}
-.hero-slider ul.slides li.slide3 {
-  background-color: #1f9b48;
+.hero-slider ul.slides li.hero-services {
+  background-color: #df2134;
   background-image: url(../img/slide3.svg);
 }
-.hero-slider ul.slides li.slide3 .ctabtn {
-  color: #1f9b48;
+.hero-slider ul.slides li.hero-osshosting {
+  background-color: #fdba22;
+  background-image: url(../img/slide3.svg);
+}
+.hero-slider ul.slides li.hero-sponsorship {
+  background-color: #824199;
+  background-image: url(../img/slide3.svg);
 }
 .bodyitem.shieldboxes {
   margin: -40px auto 30px auto;
@@ -162,16 +164,16 @@
   background: #ef9923;
 }
 .bodyitem.shieldboxes ul li.shield2 .cta {
-  background: #0eafcd;
+  background: #1f9b48;
 }
 .bodyitem.shieldboxes ul li.shield2 .cta:hover {
-  background: #1c4455;
+  background: #106745;
 }
 .bodyitem.shieldboxes ul li.shield3 .cta {
-  background: #824199;
+  background: #df2134;
 }
 .bodyitem.shieldboxes ul li.shield3 .cta:hover {
-  background: #472c82;
+  background: #ab1d37;
 }
 .bodyitem.secondaryboxes {
   margin-bottom: 60px;
@@ -210,7 +212,7 @@
   display: inline-block;
   padding: 8px 0;
   width: 66%;
-  background: #1f9b48;
+  background: #0eafcd;
   font-weight: 600;
   text-decoration: none;
   color: white;
@@ -218,7 +220,7 @@
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 .bodyitem.secondaryboxes ul li .cta:hover {
-  background: #106745;
+  background: #1c4455;
 }
 .bodyitem.fromtheblog {
   padding-top: 60px;
