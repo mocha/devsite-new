@@ -10,6 +10,18 @@
   text-transform: uppercase;
   font-size: .8em;
 }
+.valigned {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+.smallcapped {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .8em;
+}
 .twocol-layout {
   padding-top: 80px;
 }
@@ -196,6 +208,18 @@
   text-align: right;
   float: right;
 }
+.valigned {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+.smallcapped {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .8em;
+}
 .hero-slider {
   color: white;
 }
@@ -282,13 +306,13 @@
 .hero-slider ul.slides li.slide3 .ctabtn {
   color: #1f9b48;
 }
-.shieldboxes {
+.bodyitem.shieldboxes {
   margin: -40px auto 30px auto;
 }
-.shieldboxes ul {
+.bodyitem.shieldboxes ul {
   margin-left: -20px;
 }
-.shieldboxes ul li {
+.bodyitem.shieldboxes ul li {
   display: block;
   width: 300px;
   padding: 20px 40px 80px;
@@ -297,25 +321,25 @@
   margin-left: 20px;
   text-align: center;
 }
-.shieldboxes ul li img {
+.bodyitem.shieldboxes ul li img {
   margin: 20px auto;
   display: block;
   max-height: 80px;
   opacity: .15;
 }
-.shieldboxes ul li .title {
+.bodyitem.shieldboxes ul li .title {
   display: block;
   font-size: 2.2em;
   font-weight: 700;
   letter-spacing: -1px;
   margin-bottom: 10px;
 }
-.shieldboxes ul li .description {
+.bodyitem.shieldboxes ul li .description {
   font-size: 1.2em;
   line-height: 1.5em;
   display: block;
 }
-.shieldboxes ul li .cta {
+.bodyitem.shieldboxes ul li .cta {
   display: inline-block;
   padding: 8px 0;
   width: 75%;
@@ -326,54 +350,160 @@
   border-radius: 30px;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
-.shieldboxes ul li.shield1 .description {
+.bodyitem.shieldboxes ul li.shield1 .description {
   margin-bottom: 21px;
 }
-.shieldboxes ul li.shield1 .description .fineprint {
+.bodyitem.shieldboxes ul li.shield1 .description .fineprint {
   line-height: 1em;
   font-size: .7em;
   color: #999;
   margin-top: 0px;
   display: block;
 }
-.shieldboxes ul li.shield1 a {
+.bodyitem.shieldboxes ul li.shield1 a {
   color: #666;
 }
-.shieldboxes ul li.shield1 .cta {
+.bodyitem.shieldboxes ul li.shield1 .cta {
   background: #fdba22;
   margin-top: 0;
   color: white;
 }
-.shieldboxes ul li.shield1 .cta:hover {
+.bodyitem.shieldboxes ul li.shield1 .cta:hover {
   background: #ef9923;
 }
-.shieldboxes ul li.shield2 .cta {
+.bodyitem.shieldboxes ul li.shield2 .cta {
   background: #0eafcd;
 }
-.shieldboxes ul li.shield2 .cta:hover {
+.bodyitem.shieldboxes ul li.shield2 .cta:hover {
   background: #1c4455;
 }
-.shieldboxes ul li.shield3 .cta {
+.bodyitem.shieldboxes ul li.shield3 .cta {
   background: #824199;
 }
-.shieldboxes ul li.shield3 .cta:hover {
+.bodyitem.shieldboxes ul li.shield3 .cta:hover {
   background: #472c82;
 }
-.shieldboxes.sixup ul li {
+.bodyitem.secondaryboxes {
+  margin-bottom: 60px;
+}
+.bodyitem.secondaryboxes ul {
+  margin-left: -20px;
+}
+.bodyitem.secondaryboxes ul li {
+  display: block;
+  width: 220px;
+  padding: 10px;
+  float: left;
+  margin-left: 20px;
+  text-align: center;
+}
+.bodyitem.secondaryboxes ul li img {
+  margin: 20px auto;
+  display: block;
+  max-height: 60px;
+  opacity: .15;
+}
+.bodyitem.secondaryboxes ul li .title {
+  display: block;
+  font-size: 1.4em;
+  line-height: 1em;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+.bodyitem.secondaryboxes ul li .description {
+  font-size: 1em;
+  display: block;
+  margin-bottom: 20px;
+}
+.bodyitem.secondaryboxes ul li .cta {
+  display: inline-block;
+  padding: 8px 0;
+  width: 66%;
+  background: #1f9b48;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.bodyitem.secondaryboxes ul li .cta:hover {
+  background: #106745;
+}
+.bodyitem.fromtheblog {
+  padding-top: 60px;
+  text-align: center;
+  color: #1c4455;
+  border-top: 1px solid #ccc;
+}
+.bodyitem.fromtheblog h2 {
+  font-size: 2.2em;
+  letter-spacing: -1px;
+}
+.bodyitem.fromtheblog h2 a {
+  color: #0eafcd;
+  text-decoration: none;
+}
+.bodyitem.fromtheblog h2 a:hover {
+  text-decoration: underline;
+}
+.bodyitem.fromtheblog ul {
+  margin: 20px 0 0 -20px;
+}
+.bodyitem.fromtheblog ul li {
+  display: block;
+  width: 300px;
+  padding: 20px;
+  float: left;
+  margin-left: 20px;
+}
+.bodyitem.fromtheblog ul li .title a {
+  font-size: 1.4em;
+  font-weight: 600;
+  display: block;
+  line-height: 1.1em;
+  color: #1c4455;
+  text-decoration: none;
+}
+.bodyitem.fromtheblog ul li .title a:hover {
+  color: #0eafcd;
+}
+.bodyitem.fromtheblog ul li .byline {
+  font-weight: 600;
+  display: block;
+  opacity: .8;
+  margin-top: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+.valigned {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+.smallcapped {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+.bodyitem.shieldboxes.sixup ul li {
   width: 140px;
   padding: 40px;
   margin-bottom: 5px;
 }
-.shieldboxes.sixup ul li a {
+.bodyitem.shieldboxes.sixup ul li a {
   text-decoration: none;
 }
-.shieldboxes.sixup ul li a .imgwrap {
+.bodyitem.shieldboxes.sixup ul li a .imgwrap {
   display: block;
   height: 80px;
   margin: 0 auto;
   padding: 0;
 }
-.shieldboxes.sixup ul li a img {
+.bodyitem.shieldboxes.sixup ul li a img {
   max-height: 60px;
   display: block;
   margin: 0 auto;
@@ -385,107 +515,53 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
 }
-.shieldboxes.sixup ul li a .title {
+.bodyitem.shieldboxes.sixup ul li a .title {
   font-size: 1.4em;
   color: #333;
 }
-.shieldboxes.sixup ul li:hover {
+.bodyitem.shieldboxes.sixup ul li:hover {
   padding-bottom: 45px;
   margin-bottom: 0;
 }
-.secondaryboxes {
-  margin-bottom: 60px;
+.bodyitem.sdktable {
+  margin-bottom: 80px;
 }
-.secondaryboxes ul {
-  margin-left: -20px;
-}
-.secondaryboxes ul li {
-  display: block;
-  width: 220px;
-  padding: 10px;
-  float: left;
-  margin-left: 20px;
-  text-align: center;
-}
-.secondaryboxes ul li img {
-  margin: 20px auto;
-  display: block;
-  max-height: 60px;
-  opacity: .15;
-}
-.secondaryboxes ul li .title {
-  display: block;
-  font-size: 1.4em;
-  line-height: 1em;
-  font-weight: 700;
-  letter-spacing: -1px;
-  margin-bottom: 10px;
-}
-.secondaryboxes ul li .description {
-  font-size: 1em;
-  display: block;
-  margin-bottom: 20px;
-}
-.secondaryboxes ul li .cta {
-  display: inline-block;
-  padding: 8px 0;
-  width: 66%;
-  background: #1f9b48;
-  font-weight: 600;
-  text-decoration: none;
-  color: white;
-  border-radius: 30px;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-}
-.secondaryboxes ul li .cta:hover {
-  background: #106745;
-}
-.fromtheblog {
-  padding-top: 60px;
-  text-align: center;
-  color: #1c4455;
+.bodyitem.sdktable .lang {
   border-top: 1px solid #ccc;
+  padding-top: 40px;
+  margin: 40px 0 0 -20px;
 }
-.fromtheblog h2 {
-  font-size: 2.2em;
-  letter-spacing: -1px;
-}
-.fromtheblog h2 a {
-  color: #0eafcd;
-  text-decoration: none;
-}
-.fromtheblog h2 a:hover {
-  text-decoration: underline;
-}
-.fromtheblog ul {
-  margin: 20px 0 0 -20px;
-}
-.fromtheblog ul li {
-  display: block;
-  width: 300px;
-  padding: 20px;
+.bodyitem.sdktable .lang .col {
+  width: 220px;
   float: left;
   margin-left: 20px;
 }
-.fromtheblog ul li .title a {
-  font-size: 1.4em;
-  font-weight: 600;
+.bodyitem.sdktable .lang .col h2 {
   display: block;
-  line-height: 1.1em;
-  color: #1c4455;
+  font-size: 2.6em;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+.bodyitem.sdktable .lang .col .cta {
+  padding: 10px 20px;
+  background: #df2134;
+  color: white;
+  display: inline-block;
+  border-radius: 100px;
   text-decoration: none;
 }
-.fromtheblog ul li .title a:hover {
-  color: #0eafcd;
+.bodyitem.sdktable .lang .col .cta:hover {
+  background: #ab1d37;
 }
-.fromtheblog ul li .byline {
-  font-weight: 600;
-  display: block;
-  opacity: .8;
-  margin-top: 5px;
+.bodyitem.sdktable .lang .col .colheader {
   font-weight: 700;
   text-transform: uppercase;
   font-size: .8em;
+  display: block;
+}
+.bodyitem.sdktable .lang .col p {
+  margin-top: 1em;
 }
 body {
   background: white;
